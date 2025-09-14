@@ -2,9 +2,13 @@ import discord
 from discord.ext import commands
 import os
 from dotenv import load_dotenv
+from src.database.models import Database
 
 # load environment variables
 load_dotenv()
+
+# databse
+db = Database()
 
 # bot set up
 intents = discord.Intents.default()
